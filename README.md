@@ -13,6 +13,8 @@
 - $ git remote prune origin  
 - $ git fetch -p   
  
+git branch -rd $(git branch -a | grep -v 'master' | cut -d'/' -f2-10 | xargs)  
+to remove all remote tracking branch excluding master
 
  
 ### PUSH TO REMOTE  
